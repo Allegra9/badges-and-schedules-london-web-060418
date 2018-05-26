@@ -8,9 +8,10 @@ def batch_badge_creator(array_of_names)
   return badge 
 end
 
-def assign_rooms(list_of_speakers)
-  #Rooms 1-7
-  list_of_speakers.each_with_index {|name, index| print "Hello, #{name}! You'll be assinged to room #{index +1}!"}
+def assign_rooms(attendees)
+  attendees.each_with_index.map do |attendee, index|
+    puts "Hello, #{attendee}! You'll be assigned to room #{index+1}!"
+  end
 end
 
 def printer 
