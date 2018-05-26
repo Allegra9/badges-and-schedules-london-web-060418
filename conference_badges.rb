@@ -2,10 +2,10 @@ def badge_maker(name)
   return "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(array_of_names)
-  #a.each {|x| print x, " -- " }
-  badge = array_of_names.each {|name| puts "Hello, my name is #{name}." }
-  return badge 
+def batch_badge_creator(list_of_speakers)
+  attendees.map do |name|
+    "Hello, my name is #{name}."
+  end
 end
 
 def assign_rooms(attendees)
